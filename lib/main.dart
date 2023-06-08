@@ -1,5 +1,7 @@
 import 'dart:io';
 
+// it is not app with Adaptive UI
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -65,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
              Padding(
                padding: const EdgeInsets.all(10.0),
                child: TextField(
+                 maxLength: 16, //updated to fix bugs
                  decoration: const InputDecoration(label: Text('Title')),
                  controller: _titleController,
                ),
