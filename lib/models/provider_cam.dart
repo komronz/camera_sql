@@ -33,5 +33,9 @@ class PictureProvider extends ChangeNotifier{
     ),).toList();
     notifyListeners();
   }
+  void deleteById(String id){
+    DBHelper.deleteById(id);
+    notifyListeners();
+  }
 
 }
